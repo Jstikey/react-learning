@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +38,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.addTask {
+  height: 30vh;
+  background: dodgerblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addTask button {
+  width: 7rem;
+  font-weight: bolder;
+  height: 2rem;
+   border-radius: 5px;
+}
+
+.addTask input {
+  text-transform: capitalize;
+  width: 15rem;
+  font-size: 20px;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.listContainer {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 50vh;
+}
+.taskList{
+  height: 20px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+  text-transform: capitalize;
+  margin-left: 0;
+}
+
+.taskList button:last-child {
+  width: 25px;
+  height: 20px;
+  margin: 20px;
+  text-align: center;
+  background: red;
+  color: white;
+  font-weight: bolder;
+  font-size: 10px;
+}
+
+.taskList button:hover{
+  background: rgb(230, 102, 102);
 }
